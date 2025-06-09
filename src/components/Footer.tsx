@@ -13,7 +13,7 @@ const Footer = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-         <!-- <div className="flex items-center justify-center space-x-2 text-gray-300 mb-4">
+         <div className="flex items-center justify-center space-x-2 text-gray-300 mb-4">
             <span>Made by</span>
             <motion.div
               animate={{ scale: [1, 1.2, 1] }}
