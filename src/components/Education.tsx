@@ -47,7 +47,7 @@ const Education = () => {
               <div>
                 <div className="flex items-center mb-4">
                   <Award size={20} className="text-red-500 mr-2" />
-                  <span className="text-white font-semibold">CGPA: 9.35</span>
+                  <span className="text-white font-semibold">CGPA: 9.23</span>
                 </div>
                 <p className="text-gray-300 leading-relaxed">
                   Pursuing Bachelor of Technology in Computer Science with exceptional academic performance. 
