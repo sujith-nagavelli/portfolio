@@ -13,7 +13,7 @@ const Footer = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <div className="flex items-center justify-center space-x-2 text-gray-300 mb-4">
+         <!-- <div className="flex items-center justify-center space-x-2 text-gray-300 mb-4">
             <span>Made with</span>
             <motion.div
               animate={{ scale: [1, 1.2, 1] }}
@@ -24,7 +24,7 @@ const Footer = () => {
             <span>and</span>
             <Code className="text-blue-400" size={20} />
             <span>by Sujith Kumar Nagavelli</span>
-          </div>
+          </div>--!>
           
           <p className="text-gray-400 text-sm">
             © {new Date().getFullYear()} Sujith Kumar Nagavelli. All rights reserved.
