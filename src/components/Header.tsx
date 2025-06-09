@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Menu, X, Download } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -63,27 +63,13 @@ const Header = () => {
             ))}
           </nav>
 
-          <div className="flex items-center space-x-4">
-            <motion.a
-              href="https://drive.google.com/file/d/1Ywa8wz2YsWLvKz4xc46a95tnYERx8PZL/view?usp=drive_link"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="hidden sm:flex items-center space-x-2 bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg transition-colors duration-200"
-            >
-              <Download size={16} />
-              <span>Resume</span>
-            </motion.a>
-
-            {/* Mobile menu button */}
-            <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden text-white hover:text-red-500 transition-colors"
-            >
-              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
+          {/* Mobile menu button */}
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="md:hidden text-white hover:text-red-500 transition-colors"
+          >
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
 
         {/* Mobile Navigation */}
@@ -104,15 +90,6 @@ const Header = () => {
                   {item.name}
                 </button>
               ))}
-              <a
-                href="https://drive.google.com/file/d/1Ywa8wz2YsWLvKz4xc46a95tnYERx8PZL/view?usp=drive_link"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center space-x-2 bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg transition-colors duration-200 w-fit"
-              >
-                <Download size={16} />
-                <span>Resume</span>
-              </a>
             </nav>
           </motion.div>
         )}
