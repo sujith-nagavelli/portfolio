@@ -24,7 +24,7 @@ const Footer = () => {
             className="mt-4"
           >
             <p className="text-gray-500 text-xs">
-              Built with React, TypeScript, Tailwind CSS, and Framer Motion
+              
             </p>
           </motion.div>
         </motion.div>
