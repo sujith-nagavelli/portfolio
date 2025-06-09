@@ -55,7 +55,7 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com/in/nagavelli-sujith-kumar-70b0b9288',
+      href: 'https://linkedin.com/in/nagavelli-sujith-kumar',
       color: 'hover:text-blue-400'
     }
   ];
