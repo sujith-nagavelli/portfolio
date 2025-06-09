@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Heart, Code } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -13,19 +12,6 @@ const Footer = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-         <div className="flex items-center justify-center space-x-2 text-gray-300 mb-4">
-            <span>Made by</span>
-            <motion.div
-              animate={{ scale: [1, 1.2, 1] }}
-              transition={{ duration: 1, repeat: Infinity }}
-            >
-              
-            </motion.div>
-        
-            <Code className="text-blue-400" size={20} />
-            <span> Sujith Kumar Nagavelli</span>
-          </div>--!>
-          
           <p className="text-gray-400 text-sm">
             © {new Date().getFullYear()} Sujith Kumar Nagavelli. All rights reserved.
           </p>
